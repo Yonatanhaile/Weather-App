@@ -35,9 +35,10 @@ app.post("/", function(req, res){
                             body {
                                 font-family: 'Arial', sans-serif;
                                 background: linear-gradient(120deg, #ff6b6b 0%, #4ecdc4 100%);
-                                height: 100vh;
+                                min-height: 100vh;
                                 margin: 0;
                                 display: flex;
+                                flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
                             }
@@ -47,6 +48,7 @@ app.post("/", function(req, res){
                                 border-radius: 15px;
                                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                                 text-align: center;
+                                margin-bottom: 2rem;
                             }
                             h1 {
                                 color: #333;
@@ -80,6 +82,15 @@ app.post("/", function(req, res){
                             .button:hover {
                                 background-color: #ff5252;
                             }
+                            footer {
+                                color: white;
+                                text-align: center;
+                                padding: 1rem;
+                                position: fixed;
+                                bottom: 0;
+                                width: 100%;
+                                background-color: rgba(0, 0, 0, 0.5);
+                            }
                         </style>
                     </head>
                     <body>
@@ -90,6 +101,9 @@ app.post("/", function(req, res){
                             <p>${weatherDescription}</p>
                             <a href="/" class="button">Check Another City</a>
                         </div>
+                        <footer>
+                            Made by Yonatan Haile 2024
+                        </footer>
                     </body>
                     </html>
                 `);
@@ -107,9 +121,10 @@ app.post("/", function(req, res){
                         body {
                             font-family: 'Arial', sans-serif;
                             background: linear-gradient(120deg, #ff6b6b 0%, #4ecdc4 100%);
-                            height: 100vh;
+                            min-height: 100vh;
                             margin: 0;
                             display: flex;
+                            flex-direction: column;
                             justify-content: center;
                             align-items: center;
                         }
@@ -119,6 +134,7 @@ app.post("/", function(req, res){
                             border-radius: 15px;
                             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                             text-align: center;
+                            margin-bottom: 2rem;
                         }
                         h1 {
                             color: #ff6b6b;
@@ -142,6 +158,15 @@ app.post("/", function(req, res){
                         .button:hover {
                             background-color: #ff5252;
                         }
+                        footer {
+                            color: white;
+                            text-align: center;
+                            padding: 1rem;
+                            position: fixed;
+                            bottom: 0;
+                            width: 100%;
+                            background-color: rgba(0, 0, 0, 0.5);
+                        }
                     </style>
                 </head>
                 <body>
@@ -150,6 +175,9 @@ app.post("/", function(req, res){
                         <p>We couldn't find weather data for "${query}". Please check the spelling and try again.</p>
                         <a href="/" class="button">Try Another City</a>
                     </div>
+                    <footer>
+                        Made by Yonatan Haile 2024
+                    </footer>
                 </body>
                 </html>
             `);
@@ -167,9 +195,10 @@ app.post("/", function(req, res){
                     body {
                         font-family: 'Arial', sans-serif;
                         background: linear-gradient(120deg, #ff6b6b 0%, #4ecdc4 100%);
-                        height: 100vh;
+                        min-height: 100vh;
                         margin: 0;
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
                         align-items: center;
                     }
@@ -179,6 +208,7 @@ app.post("/", function(req, res){
                         border-radius: 15px;
                         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                         text-align: center;
+                        margin-bottom: 2rem;
                     }
                     h1 {
                         color: #ff6b6b;
@@ -202,6 +232,15 @@ app.post("/", function(req, res){
                     .button:hover {
                         background-color: #ff5252;
                     }
+                    footer {
+                        color: white;
+                        text-align: center;
+                        padding: 1rem;
+                        position: fixed;
+                        bottom: 0;
+                        width: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
                 </style>
             </head>
             <body>
@@ -210,6 +249,9 @@ app.post("/", function(req, res){
                     <p>We're having trouble accessing the weather data right now. Please try again later.</p>
                     <a href="/" class="button">Go Back</a>
                 </div>
+                <footer>
+                    Made by Yonatan Haile 2024
+                </footer>
             </body>
             </html>
         `);
